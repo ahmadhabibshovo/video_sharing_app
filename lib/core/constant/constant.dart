@@ -1,0 +1,25 @@
+final List<String> videoCategories = [
+  "Entertainment",
+  "Education",
+  "Gaming",
+  "Science & Technology",
+  "Music",
+  "Comedy",
+  "Sports",
+  "News & Politics",
+  "Food",
+  "Travel",
+];
+final List<String> videoCategoriesSelect = [
+  "All",
+  "Entertainment",
+  "Education",
+  "Gaming",
+  "Science & Technology",
+  "Music",
+  "Comedy",
+  "Sports",
+  "News & Politics",
+  "Food",
+  "Travel",
+];

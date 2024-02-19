@@ -112,10 +112,12 @@ class _PostVideoState extends State<PostVideo> {
                         EasyLoading.showSuccess('Post Success!');
                         String thumbnailUrl =
                             await StoreData().uploadThumbnail(widget.thumbnail);
+                        String videoUrl =
+                            await StoreData().uploadVideo(widget.video.path);
                         await StoreData()
                             .saveVideoData(
                                 thumbnailDownloadUrl: thumbnailUrl,
-                                videoDownloadUrl: widget.video.path,
+                                videoDownloadUrl: videoUrl,
                                 title: titleController.text,
                                 description: descriptionController.text,
                                 category: _selectedCategory!,
